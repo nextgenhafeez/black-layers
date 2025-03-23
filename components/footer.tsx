@@ -1,10 +1,8 @@
-"use client"
-
 import Link from "next/link"
 import Image from "next/image"
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react"
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200 py-12">
       <div className="container mx-auto px-4">
