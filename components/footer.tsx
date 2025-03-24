@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Mail, Phone, MapPin, Github, Linkedin, Instagram } from "lucide-react"
+import { Mail, Phone, MapPin, Github, Linkedin, Instagram, Facebook } from "lucide-react"
 
 const TikTokIcon = ({ className }: { className?: string }) => (
   <svg
@@ -136,6 +136,15 @@ export default function Footer() {
               <a href="#" className="text-gray-400 hover:text-blue-600 transition-colors">
                 <XIcon className="h-5 w-5" />
                 <span className="sr-only">X (Twitter)</span>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61574805680907"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-blue-600 transition-colors"
+              >
+                <Facebook className="h-5 w-5" />
+                <span className="sr-only">Facebook</span>
               </a>
               <a
                 href="https://www.instagram.com/blacklayerspro/"
