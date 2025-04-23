@@ -154,4 +154,3 @@ export function PixelatedBackground({
 
   return <canvas ref={canvasRef} className={`absolute inset-0 w-full h-full ${className}`} aria-hidden="true" />
 }
-

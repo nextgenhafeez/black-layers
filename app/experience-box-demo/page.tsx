@@ -34,4 +34,3 @@ export default function ExperienceBoxDemo() {
     </div>
   )
 }
-

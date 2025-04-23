@@ -40,4 +40,3 @@ export function useScrollAnimation({ threshold = 0.1, triggerOnce = false }: Use
 
   return { ref, isVisible }
 }
-

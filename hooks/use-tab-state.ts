@@ -16,4 +16,3 @@ export function useTabState(initialTab: TabType = "skills") {
     switchTab,
   }
 }
-

@@ -35,4 +35,3 @@ export async function getLogo() {
   // For this demo, we'll just return our in-memory store
   return currentLogo
 }
-

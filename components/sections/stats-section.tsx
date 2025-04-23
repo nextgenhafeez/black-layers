@@ -89,4 +89,3 @@ function CountUp({ end, duration = 2 }) {
     </span>
   )
 }
-

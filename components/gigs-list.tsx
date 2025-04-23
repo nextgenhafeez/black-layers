@@ -51,4 +51,3 @@ export default function GigsList({ gigs }: GigsListProps) {
     </div>
   )
 }
-

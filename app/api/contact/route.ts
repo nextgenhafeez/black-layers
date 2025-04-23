@@ -16,4 +16,3 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: false, message: "Failed to process form submission" }, { status: 500 })
   }
 }
-

@@ -50,4 +50,3 @@ export const reviews: Review[] = [
     service: "I will build a MERN stack web application with authentication",
   },
 ]
-

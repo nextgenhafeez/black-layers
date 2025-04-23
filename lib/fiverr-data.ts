@@ -268,4 +268,3 @@ export async function getGigReviews(username: string, gigId: string): Promise<Fi
 
   return profile.reviews.filter((review) => review.gigId === gigId)
 }
-

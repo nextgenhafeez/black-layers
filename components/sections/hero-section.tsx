@@ -135,4 +135,3 @@ export function HeroSection() {
     </section>
   )
 }
-

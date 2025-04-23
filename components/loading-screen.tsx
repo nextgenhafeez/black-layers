@@ -49,4 +49,3 @@ export function LoadingScreen({ minDisplayTime = 3000, onLoadingComplete }: Load
     </motion.div>
   )
 }
-

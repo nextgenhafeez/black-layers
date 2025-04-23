@@ -84,4 +84,3 @@ export function HornsInnovationCard({ className, title, description, icon, onCli
     </motion.div>
   )
 }
-

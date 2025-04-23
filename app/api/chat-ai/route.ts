@@ -34,4 +34,3 @@ async function simulateDeepSeekResponse(message: string): Promise<string> {
   // Default response
   return "Thank you for your question. For more specific information, please contact our team directly at contact@blacklayers.ca."
 }
-

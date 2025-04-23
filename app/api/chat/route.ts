@@ -22,4 +22,3 @@ export async function POST(req: Request) {
     return Response.json({ error: "Failed to process chat request" }, { status: 500 })
   }
 }
-

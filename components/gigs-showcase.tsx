@@ -55,4 +55,3 @@ export function GigsShowcase({ gigs }: GigsShowcaseProps) {
     </div>
   )
 }
-

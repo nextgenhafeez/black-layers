@@ -48,4 +48,3 @@ export function ReviewCard({ review, index }: ReviewCardProps) {
     </motion.div>
   )
 }
-

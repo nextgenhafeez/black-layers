@@ -135,4 +135,3 @@ export function HeroGeometricSvg({ className = "" }: HeroGeometricSvgProps) {
     </div>
   )
 }
-

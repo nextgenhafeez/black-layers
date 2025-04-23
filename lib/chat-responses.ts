@@ -68,4 +68,3 @@ export function findResponse(message: string): string {
   // Default response if no match is found
   return "I'm not sure I understand. Could you please rephrase your question? You can ask about our services, pricing, portfolio, or contact information."
 }
-

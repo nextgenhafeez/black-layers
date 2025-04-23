@@ -156,4 +156,3 @@ export function ModelViewer() {
     </div>
   )
 }
-

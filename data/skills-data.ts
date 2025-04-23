@@ -47,4 +47,3 @@ export const skillCategories: SkillCategory[] = [
     skills: [{ name: "UI/UX Design", level: "Intermediate", percentage: 70 }],
   },
 ]
-

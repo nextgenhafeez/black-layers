@@ -334,4 +334,3 @@ export function CoordinatedAnimation() {
     </div>
   )
 }
-

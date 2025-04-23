@@ -41,4 +41,3 @@ export function SkillCard({ skill }: SkillCardProps) {
     </div>
   )
 }
-

@@ -44,4 +44,3 @@ export function CodeBlock({ code, language = "jsx", className }: CodeBlockProps)
     </div>
   )
 }
-

@@ -24,4 +24,3 @@ export function BlackWhatsAppButton({ phoneNumber, className }: BlackWhatsAppBut
     </a>
   )
 }
-

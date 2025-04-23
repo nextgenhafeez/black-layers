@@ -20,4 +20,3 @@ export function SkillsTab() {
     </motion.div>
   )
 }
-

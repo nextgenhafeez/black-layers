@@ -39,4 +39,3 @@ export function StatCard({ stat }: StatCardProps) {
     </motion.div>
   )
 }
-

@@ -84,4 +84,3 @@ export function AnimatedNavbarLogo({ width = 1280, height = 320, className = "" 
     </div>
   )
 }
-

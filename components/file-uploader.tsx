@@ -100,4 +100,3 @@ export function FileUploader({ onFileUpload, disabled = false }: FileUploaderPro
     </div>
   )
 }
-

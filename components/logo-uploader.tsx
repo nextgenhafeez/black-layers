@@ -382,4 +382,3 @@ export default function LogoUploader({ currentLogo }: { currentLogo: { url: stri
     </Card>
   )
 }
-

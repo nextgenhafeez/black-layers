@@ -22,4 +22,3 @@ export function TabButton({ active, onClick, children }: TabButtonProps) {
     </button>
   )
 }
-

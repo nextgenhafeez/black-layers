@@ -41,4 +41,3 @@ export const performanceStats: Stat[] = [
     color: "purple",
   },
 ]
-
