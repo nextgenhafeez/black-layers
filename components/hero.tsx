@@ -41,12 +41,12 @@ export function Hero() {
         <div className="grid gap-8 lg:grid-cols-2 items-center">
           <div className="flex flex-col justify-center space-y-6 text-center">
             <div className="space-y-4 animate-slideUp">
-              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight">
-                Transform Your <span className="block">Digital Experience</span>
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+                Custom Digital Solutions for <span className="text-gradient">Modern Businesses</span>
               </h1>
-              <p className="text-gray-600 text-base sm:text-lg md:text-xl/relaxed mx-auto max-w-[600px]">
-                We build custom white-label applications and digital solutions that drive growth and innovation for your
-                business.
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+                Black Layers is a premier digital product studio specializing in custom web applications, white-label
+                solutions, and innovative digital experiences that drive business growth.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center flex-wrap gap-4 mt-6 sm:mt-8">
