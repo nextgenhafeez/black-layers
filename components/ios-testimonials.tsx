@@ -32,24 +32,15 @@ export function IosTestimonials() {
 
   const testimonials = [
     {
-      name: "Kasra Vehmi",
-      company: "VooConnect",
       quote:
         "The team delivered a high-quality social media app that exceeded our expectations. Real-time chat and video features were spot on!",
-      image: "/testimonial-male-1.png",
     },
     {
-      name: "OKAN",
-      company: "AdClose",
       quote: "They built a revenue-generating utility that runs flawlessly. We hit $10K/month in under 6 months!",
-      image: "/testimonial-male-2.png",
     },
     {
-      name: "Yaren Hadad",
-      company: "DirectPads",
       quote:
         "Professional, fast, and reliable. They understood the real estate domain and delivered exactly what we needed with MLS integration.",
-      image: "/testimonial-female-2.png",
     },
   ]
 
@@ -72,17 +63,6 @@ export function IosTestimonials() {
         >
           {testimonials.map((testimonial, index) => (
             <motion.div key={index} variants={itemVariants} className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-center mb-4">
-                <img
-                  src={testimonial.image || "/placeholder.svg"}
-                  alt={`${testimonial.name} portrait`}
-                  className="w-16 h-16 rounded-full mr-4 object-cover"
-                />
-                <div>
-                  <h3 className="font-bold">{testimonial.name}</h3>
-                  <p className="text-gray-600">{testimonial.company}</p>
-                </div>
-              </div>
               <p className="text-gray-700 italic">"{testimonial.quote}"</p>
             </motion.div>
           ))}
