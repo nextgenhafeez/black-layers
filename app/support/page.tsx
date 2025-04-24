@@ -8,7 +8,9 @@ export default function SupportPage() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold mb-4 text-white">Support Center</h1>
-            <p className="text-gray-300 text-xl mb-8">We're here to help you 24/7, 365 days a year</p>
+            <p className="text-gray-300 text-xl mb-8">
+              Expert assistance available 24/7 — Get immediate help with any technical issue or question
+            </p>
 
             <div className="flex flex-wrap justify-center gap-4">
               <Link
@@ -99,8 +101,8 @@ export default function SupportPage() {
             <div className="bg-card p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-2">What are your support hours?</h3>
               <p className="text-gray-400">
-                Our support team is available 24 hours a day, 7 days a week, 365 days a year. We're always here to help
-                you, regardless of the time or day.
+                Our support team is available 24 hours a day, 7 days a week. We're always here to help you, regardless
+                of the time or day.
               </p>
             </div>
 

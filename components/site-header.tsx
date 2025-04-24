@@ -28,7 +28,7 @@ export function SiteHeader() {
   const navItems = [
     { href: "#work", label: "Work" },
     { href: "#services", label: "Services" },
-    { href: "#process", label: "Process" },
+    { href: "#portfolio", label: "Portfolio" },
     { href: "#about", label: "About" },
     { href: "#contact", label: "Contact" },
   ]
