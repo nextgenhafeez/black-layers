@@ -7,7 +7,7 @@ export default function SupportPage() {
       <div className="bg-black py-16">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-4">Support Center</h1>
+            <h1 className="text-4xl font-bold mb-4 text-white">Support Center</h1>
             <p className="text-gray-300 text-xl mb-8">We're here to help you 24/7, 365 days a year</p>
 
             <div className="flex flex-wrap justify-center gap-4">
