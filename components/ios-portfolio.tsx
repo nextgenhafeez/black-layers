@@ -12,7 +12,7 @@ const apps = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%201446-10-26%20at%2010.12.08%E2%80%AFAM-Fpw1maJSl6P3Cc0pKrlMVdA5WQQunv.png",
     industry: "Social Media",
-    link: "#",
+    link: "https://apps.apple.com/app/vooconnect/id1573637452",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const apps = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%201446-10-26%20at%209.22.10%E2%80%AFAM-1MJg9PAb3ZzBxKp7Aqj1lbvGEHKd5y.png",
     industry: "Utility / Ad Tech",
-    link: "#",
+    link: "https://apps.apple.com/sa/app/adclose-adblock-for-mobile/id6443847618",
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const apps = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%201446-10-26%20at%2010.11.48%E2%80%AFAM-go4invFguf8XqHAyGeVe5zYuZbe1ty.png",
     industry: "Real Estate",
-    link: "#",
+    link: "https://apps.apple.com/pk/app/directpads/id1585676126",
   },
 ]
 
@@ -63,7 +63,12 @@ export function IosPortfolio() {
                 <div className="text-xs text-gray-500">Industry: {app.industry}</div>
                 <h3 className="text-lg font-bold">{app.title}</h3>
                 <p className="text-sm text-gray-600 mb-1">{app.description}</p>
-                <a href={app.link} className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800">
+                <a
+                  href={app.link}
+                  className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <span className="mr-1">View on App Store</span>
                   <ExternalLink size={14} />
                 </a>
