@@ -30,6 +30,13 @@ export function Hero() {
     }
   }, [])
 
+  const scrollToPortfolio = () => {
+    const portfolioSection = document.getElementById("ios-portfolio")
+    if (portfolioSection) {
+      portfolioSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <section ref={ref} className="relative overflow-hidden py-12 md:py-32 bg-gradient-to-b from-white to-blue-50">
       <div className="absolute inset-0 overflow-hidden">
@@ -51,22 +58,28 @@ export function Hero() {
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center flex-wrap gap-4 mt-6 sm:mt-8">
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-black hover:bg-gray-800 text-white px-8 py-6 rounded-md text-lg flex items-center gap-2">
+                <a
+                  href="https://wa.me/message/IGATNM7444G6G1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex h-12 items-center justify-center whitespace-nowrap px-6 bg-black text-white rounded-md text-base font-medium transition-colors hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
+                    width="16"
+                    height="16"
                     viewBox="0 0 384 512"
                     fill="currentColor"
-                    className="mr-1"
+                    className="mr-2"
                   >
                     <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
                   </svg>
                   Get a Free iOS App Quote
-                </Button>
+                </a>
                 <Button
                   variant="outline"
-                  className="border-black text-black hover:bg-gray-100 px-8 py-6 rounded-md text-lg"
+                  className="h-12 border-black text-black hover:bg-gray-100 whitespace-nowrap"
+                  onClick={scrollToPortfolio}
                 >
                   See Our iOS Portfolio
                 </Button>

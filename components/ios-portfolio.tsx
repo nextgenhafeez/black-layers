@@ -38,7 +38,7 @@ const apps = [
 
 export function IosPortfolio() {
   return (
-    <section className="py-6 bg-white">
+    <section id="ios-portfolio" className="py-6 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-4">
           <h2 className="text-3xl font-bold mb-2">Our iOS App Portfolio</h2>
