@@ -36,20 +36,20 @@ export function IosTestimonials() {
       company: "VooConnect",
       quote:
         "The team delivered a high-quality social media app that exceeded our expectations. Real-time chat and video features were spot on!",
-      image: "/confident-executive.png",
+      image: "/testimonial-male-1.png",
     },
     {
       name: "OKAN",
       company: "AdClose",
       quote: "They built a revenue-generating utility that runs flawlessly. We hit $10K/month in under 6 months!",
-      image: "/confident-executive.png",
+      image: "/testimonial-male-2.png",
     },
     {
       name: "Yaren Hadad",
       company: "DirectPads",
       quote:
         "Professional, fast, and reliable. They understood the real estate domain and delivered exactly what we needed with MLS integration.",
-      image: "/confident-executive.png",
+      image: "/testimonial-female-2.png",
     },
   ]
 
@@ -75,7 +75,7 @@ export function IosTestimonials() {
               <div className="flex items-center mb-4">
                 <img
                   src={testimonial.image || "/placeholder.svg"}
-                  alt={testimonial.name}
+                  alt={`${testimonial.name} portrait`}
                   className="w-16 h-16 rounded-full mr-4 object-cover"
                 />
                 <div>
