@@ -21,7 +21,7 @@ const projects = [
     description:
       "A high-performance ad blocker helping users block unwanted ads across their device. Currently generating $10,000+ in monthly revenue.",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%201446-10-26%20at%209.22.10%E2%80%AFAM-o7TmSIQValCe3fMwyDVCaDA1WSjbAY.png",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%201446-10-26%20at%209.22.10%E2%80%AFAM-1MJg9PAb3ZzBxKp7Aqj1lbvGEHKd5y.png",
     tags: ["Utility", "Ad Tech", "Mobile", "iOS"],
     link: "https://adclose.app/",
   },
@@ -31,7 +31,7 @@ const projects = [
     description:
       "Innovative social media platform for short-form video content and real-time communication. Includes features like live streaming, chat functionality, and voice messaging.",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%201446-09-07%20at%2011.17.11%E2%80%AFPM-03g0kRt06yt5sb2BNFhcewwxi79zo1.png",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%201446-10-26%20at%2010.12.08%E2%80%AFAM-Fpw1maJSl6P3Cc0pKrlMVdA5WQQunv.png",
     tags: ["Social Media", "Live Streaming", "Mobile", "Real-time"],
     link: "https://app.vooconnect.com/",
   },
@@ -41,7 +41,7 @@ const projects = [
     description:
       "Real estate platform offering instant cash offers for homes within 24 hours. Features flexible closing timelines, no-obligation offers, and a streamlined selling process.",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%201446-10-26%20at%209.23.23%E2%80%AFAM-IcMS6HVrL0YMzuK7vJKm9NpGkeudSC.png",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%201446-10-26%20at%2010.11.48%E2%80%AFAM-go4invFguf8XqHAyGeVe5zYuZbe1ty.png",
     tags: ["Real Estate", "FinTech", "Automation", "Web Platform"],
     link: "https://directpads.com/",
   },
@@ -63,7 +63,7 @@ export function Portfolio() {
           </p>
         </div>
 
-        <div className="grid gap-10 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-2">
           {projects.map((project) => (
             <div
               key={project.id}
@@ -71,19 +71,19 @@ export function Portfolio() {
               onMouseEnter={() => setHoveredId(project.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
-              <div className="aspect-video overflow-hidden relative">
+              <div className="h-[350px] overflow-hidden relative">
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
                   width={800}
                   height={450}
-                  className={`h-full w-full object-cover transition-transform duration-500 ${
+                  className={`h-full w-full object-contain transition-transform duration-500 ${
                     hoveredId === project.id ? "scale-105" : ""
                   }`}
                 />
               </div>
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
+              <div className="p-4">
+                <div className="flex items-center justify-between mb-2">
                   <h3 className="text-xl font-bold text-gray-900">{project.title}</h3>
                   {project.link && (
                     <a
@@ -97,8 +97,8 @@ export function Portfolio() {
                     </a>
                   )}
                 </div>
-                <p className="text-gray-600 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mt-4">
+                <p className="text-gray-600 mb-3">{project.description}</p>
+                <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
