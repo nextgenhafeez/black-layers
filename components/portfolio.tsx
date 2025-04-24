@@ -11,19 +11,19 @@ const projects = [
     description:
       "A modern real estate platform empowering home buyers to create and submit offers directly. Features include a streamlined offer creation process and professional referral system.",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%201446-09-07%20at%2011.08.50%E2%80%AFPM.png-kStfOIpUowXWkyhpfhoKOkB4oUIGrR.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%201446-10-26%20at%2010.26.24%E2%80%AFAM-fxTmdIPj32oejcuCdDzWLqEtOF5Yc2.png",
     tags: ["Web Platform", "Real Estate", "Full-Stack"],
     link: "https://www.offeright.com/",
   },
   {
     id: 2,
-    title: "Zero Messenger",
+    title: "AdClose – Adblock for Mobile",
     description:
-      "Next-generation secure messaging platform with advanced privacy features, end-to-end encryption, and AI assistance. Features zero-knowledge architecture and digital rights protection.",
+      "A high-performance ad blocker helping users block unwanted ads across their device. Currently generating $10,000+ in monthly revenue.",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%201446-09-07%20at%2011.13.22%E2%80%AFPM-VrmTgJ3lV5qUfmaocbthg8zf9x1Gfw.png",
-    tags: ["Privacy", "AI", "Encryption", "Mobile"],
-    link: "https://zero.tech/messenger",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%201446-10-26%20at%209.22.10%E2%80%AFAM-o7TmSIQValCe3fMwyDVCaDA1WSjbAY.png",
+    tags: ["Utility", "Ad Tech", "Mobile", "iOS"],
+    link: "https://adclose.app/",
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ const projects = [
     description:
       "Real estate platform offering instant cash offers for homes within 24 hours. Features flexible closing timelines, no-obligation offers, and a streamlined selling process.",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%201446-09-07%20at%2011.19.58%E2%80%AFPM-dTqP8ZPnGiBhEkP0DH1cAm6gBjWAgC.png",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%201446-10-26%20at%209.23.23%E2%80%AFAM-IcMS6HVrL0YMzuK7vJKm9NpGkeudSC.png",
     tags: ["Real Estate", "FinTech", "Automation", "Web Platform"],
     link: "https://directpads.com/",
   },
