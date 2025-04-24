@@ -8,9 +8,11 @@ import { DeepseekChatAssistant } from "@/components/deepseek-chat-assistant"
 
 const inter = Inter({ subsets: ["latin"] })
 
+// Update the metadata
 export const metadata: Metadata = {
-  title: "Black Layers | Digital Product Studio",
-  description: "Transform your business with custom white-label applications and digital solutions.",
+  title: "iOS App Development Company | Black Layers",
+  description:
+    "Professional iOS app development services. We design and develop high-performance iOS applications tailored to your business needs — from idea to App Store launch.",
   generator: "v0.dev",
 }
 

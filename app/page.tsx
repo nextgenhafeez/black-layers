@@ -1,26 +1,26 @@
 import { Hero } from "@/components/hero"
-import { Services } from "@/components/services"
-import { WhiteLabelSection } from "@/components/white-label-section"
-import { Portfolio } from "@/components/portfolio"
+import { WhyChooseUs } from "@/components/why-choose-us"
+import { IosPortfolio } from "@/components/ios-portfolio"
+import { IosTestimonials } from "@/components/ios-testimonials"
+import { TrustElements } from "@/components/trust-elements"
 import { Contact } from "@/components/contact"
-import { SkillsExpertise } from "@/components/skills-expertise"
 
-// Example of adding metadata to your home page
+// Update the metadata for SEO
 export const metadata = {
-  title: "Black Layers | Digital Product Studio & Custom Web Applications",
+  title: "iOS App Development Company | Black Layers",
   description:
-    "Transform your business with custom white-label applications, React development, and digital solutions by Black Layers studio.",
-  keywords: "digital product studio, custom web applications, white-label solutions, React development",
+    "Professional iOS app development services. We design and develop high-performance iOS applications tailored to your business needs — from idea to App Store launch.",
+  keywords: "iOS app development, Swift development, iOS developer, custom iOS apps, iPhone app development",
 }
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Hero />
-      <SkillsExpertise />
-      <Services />
-      <WhiteLabelSection />
-      <Portfolio />
+      <WhyChooseUs />
+      <IosPortfolio />
+      <IosTestimonials />
+      <TrustElements />
       <Contact />
     </div>
   )
