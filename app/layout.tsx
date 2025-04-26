@@ -5,6 +5,7 @@ import "./globals.css"
 import { Navbar } from "@/components/navbar"
 import Footer from "@/components/footer"
 import { DeepseekChatAssistant } from "@/components/deepseek-chat-assistant"
+import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -23,6 +24,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Google tag (gtag.js) */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-17029942619" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17029942619');
+          `}
+        </Script>
+        {/* Event snippet for Contact conversion page */}
+        <Script id="google-conversion" strategy="afterInteractive">
+          {`
+            gtag('event', 'conversion', {'send_to': 'AW-17029942619/bOyCCPyG07waENuawbg_'});
+          `}
+        </Script>
+      </head>
       <body className={`${inter.className} bg-white text-gray-800`}>
         <Navbar />
         <main>{children}</main>
