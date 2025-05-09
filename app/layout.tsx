@@ -9,7 +9,6 @@ import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] })
 
-// Update the metadata
 export const metadata: Metadata = {
   title: "iOS App Development Company | Black Layers",
   description:
@@ -24,10 +23,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* Google tag (gtag.js) */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-17029942619" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
+      <body className={`${inter.className} bg-white text-gray-800`}>
+        <Navbar />
+        <main>{children}</main>
+        <DeepseekChatAssistant />
+        <Footer />
+
+        {/* Move scripts to the end of body to prevent blocking render */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=AW-17029942619" strategy="lazyOnload" />
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -35,18 +39,11 @@ export default function RootLayout({
             gtag('config', 'AW-17029942619');
           `}
         </Script>
-        {/* Event snippet for Contact conversion page */}
-        <Script id="google-conversion" strategy="afterInteractive">
+        <Script id="google-conversion" strategy="lazyOnload">
           {`
             gtag('event', 'conversion', {'send_to': 'AW-17029942619/bOyCCPyG07waENuawbg_'});
           `}
         </Script>
-      </head>
-      <body className={`${inter.className} bg-white text-gray-800`}>
-        <Navbar />
-        <main>{children}</main>
-        <DeepseekChatAssistant />
-        <Footer />
       </body>
     </html>
   )

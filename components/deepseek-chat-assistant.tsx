@@ -1,3 +1,7 @@
+// Add a client directive at the top of the file if it doesn't already have one
+// This ensures the component only runs on the client side
+"use client"
+
 "use client"
 
 import type React from "react"
