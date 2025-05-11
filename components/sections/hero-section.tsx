@@ -1,10 +1,11 @@
 "use client"
 
-import { useRef, useEffect } from "react"
+import { useRef, useEffect, useState } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { ScrollIndicator } from "@/components/scroll-indicator"
 
 export function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -18,29 +19,33 @@ export function HeroSection() {
 
   // Parallax layers
   const layerRefs = Array.from({ length: 5 }).map(() => useRef<HTMLDivElement>(null))
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      if (!containerRef.current) return
-
-      const { clientX, clientY } = e
-      const { width, height, left, top } = containerRef.current.getBoundingClientRect()
-
-      const x = (clientX - left) / width - 0.5
-      const y = (clientY - top) / height - 0.5
-
-      layerRefs.forEach((ref, i) => {
-        if (!ref.current) return
-        const depth = (i + 1) * 10
-        const moveX = x * depth
-        const moveY = y * depth
-        ref.current.style.transform = `translate(${moveX}px, ${moveY}px)`
-      })
+      setMousePosition({ x: e.clientX, y: e.clientY })
     }
 
     window.addEventListener("mousemove", handleMouseMove)
     return () => window.removeEventListener("mousemove", handleMouseMove)
   }, [])
+
+  useEffect(() => {
+    if (!containerRef.current) return
+
+    const { width, height, left, top } = containerRef.current.getBoundingClientRect()
+
+    const x = (mousePosition.x - left) / width - 0.5
+    const y = (mousePosition.y - top) / height - 0.5
+
+    layerRefs.forEach((ref, i) => {
+      if (!ref.current) return
+      const depth = (i + 1) * 10
+      const moveX = x * depth
+      const moveY = y * depth
+      ref.current.style.transform = `translate(${moveX}px, ${moveY}px)`
+    })
+  }, [mousePosition])
 
   return (
     <section
@@ -132,6 +137,7 @@ export function HeroSection() {
           </div>
         </motion.div>
       </div>
+      <ScrollIndicator style="mouse" text="Scroll to explore" />
     </section>
   )
 }

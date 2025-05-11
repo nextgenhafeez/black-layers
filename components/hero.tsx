@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { ScrollIndicator } from "@/components/scroll-indicator"
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null)
@@ -104,6 +105,7 @@ export function Hero() {
           </div>
         </div>
       </div>
+      <ScrollIndicator style="arrow" text="Discover more" />
     </section>
   )
 }
