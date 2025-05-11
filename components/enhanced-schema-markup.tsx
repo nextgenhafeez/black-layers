@@ -6,11 +6,20 @@ export default function EnhancedSchemaMarkup() {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
+          "@id": "https://blacklayers.ca/#organization",
           name: "Black Layers",
+          alternateName: "BLACKLAYERS",
           url: "https://blacklayers.ca",
           logo: {
             "@type": "ImageObject",
-            url: "https://blacklayers.ca/logo.png",
+            url: "https://blacklayers.ca/blacklayers-logo.png",
+            width: 512,
+            height: 512,
+            caption: "Black Layers logo",
+          },
+          image: {
+            "@type": "ImageObject",
+            url: "https://blacklayers.ca/blacklayers-logo.png",
             width: 512,
             height: 512,
           },
