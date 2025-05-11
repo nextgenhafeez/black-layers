@@ -6,6 +6,8 @@ import { Navbar } from "@/components/navbar"
 import Footer from "@/components/footer"
 import { DeepseekChatAssistant } from "@/components/deepseek-chat-assistant"
 import Script from "next/script"
+import { SchemaMarkup } from "@/components/schema-markup"
+import EnhancedSchemaMarkup from "@/components/enhanced-schema-markup"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -18,11 +20,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="en">
+      <head>
+        <SchemaMarkup />
+        <EnhancedSchemaMarkup />
+      </head>
       <body className={`${inter.className} bg-white text-gray-800`}>
         <Navbar />
         <main>{children}</main>
